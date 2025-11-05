@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Brain, Database, Wrench } from 'lucide-react';
+import { Code2, Brain, Database, Wrench, BookOpen } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -7,26 +7,35 @@ const Skills = () => {
       title: 'Languages',
       icon: Code2,
       color: 'cyan',
-      skills: ['JavaScript', 'Python', 'Java', 'HTML/CSS', 'SQL']
+      skills: ['Python (Proficient)', 'Java (Intermediate)', 'JavaScript (Intermediate)', 'PHP', 'HTML/CSS']
     },
     {
-      title: 'AI/ML',
+      title: 'AI/ML & Frameworks',
       icon: Brain,
       color: 'blue',
-      skills: ['TensorFlow', 'scikit-learn', 'Machine Learning', 'Deep Learning', 'Computer Vision']
+      skills: ['TensorFlow', 'PyTorch', 'Keras', 'scikit-learn', 'NLTK']
     },
     {
-      title: 'Frameworks & Libraries',
+      title: 'Development Tools',
       icon: Database,
       color: 'purple',
-      skills: ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI']
+      skills: ['React.js', 'Node.js', 'Flask', 'Flutter', 'REST APIs', 'Tailwind CSS']
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Database & Tools',
       icon: Wrench,
       color: 'green',
-      skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'Docker']
+      skills: ['MySQL', 'MongoDB', 'Git', 'GitHub', 'VS Code', 'Docker']
     }
+  ];
+
+  const coursework = [
+    'Object Oriented Programming',
+    'Database Management Systems',
+    'Machine Learning',
+    'Operating Systems',
+    'Computer Networks',
+    'Data Structures & Algorithms'
   ];
 
   const colorClasses = {
@@ -44,7 +53,7 @@ const Skills = () => {
         </h2>
         <p className="text-gray-400 text-center mb-12 text-lg">Technologies and tools I work with</p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -69,6 +78,26 @@ const Skills = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Coursework Section */}
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="bg-gradient-to-br from-orange-500 to-red-600 p-3 rounded-xl">
+              <BookOpen className="text-white" size={28} />
+            </div>
+            <h3 className="text-2xl font-bold text-white">Relevant Coursework</h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4">
+            {coursework.map((course, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-900/50 px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700/50 transition-colors border border-gray-700 hover:border-orange-500/50"
+              >
+                {course}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

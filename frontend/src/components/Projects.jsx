@@ -4,26 +4,29 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Smart Parking System',
-      description: 'An intelligent parking management system using AI/ML and JavaScript to optimize parking space allocation and reduce search time. Features include real-time availability tracking, automated vehicle detection, and smart routing.',
-      technologies: ['AI/ML', 'JavaScript', 'Python', 'Computer Vision', 'IoT'],
+      title: 'Smart Parking',
+      description: 'A web application that provides real-time parking availability and predictive analytics using machine learning. Developed with HTML, CSS, JavaScript for front-end, and Python (Flask) for back-end, enabling users to find available parking spots in real-time.',
+      technologies: ['Python', 'Flask', 'JavaScript', 'Keras', 'TensorFlow', 'PyTorch'],
       gradient: 'from-cyan-500 to-blue-600',
-      highlights: ['Real-time parking detection', 'ML-based predictions', 'Automated space allocation']
+      highlights: ['Real-time availability updates', 'Predictive analytics with ML', 'User-friendly interface'],
+      githubUrl: 'https://github.com/Sukruthcr'
     },
     {
-      title: 'Future Us',
-      description: 'A deployed web application that allows users to write notes today and schedule them to be emailed on future dates. Perfect for creating digital time capsules, setting reminders, and preserving memories.',
-      technologies: ['JavaScript', 'Node.js', 'Express', 'MongoDB', 'Email API'],
+      title: 'AI-Powered Chatbot',
+      description: 'An intelligent chatbot designed to provide automated responses using NLP techniques. Developed using Python and Natural Language Processing to understand and respond to user queries. Utilized NLTK and machine learning libraries for training on predefined datasets.',
+      technologies: ['Python', 'NLP', 'NLTK', 'Machine Learning'],
       gradient: 'from-purple-500 to-pink-600',
-      highlights: ['Scheduled email delivery', 'Note management system', 'Deployed and live'],
-      liveUrl: '#'
+      highlights: ['Natural Language Processing', 'Automated query responses', 'Web interface integration'],
+      githubUrl: 'https://github.com/Sukruthcr'
     },
     {
-      title: 'PG Dissertation System',
-      description: 'A comprehensive platform designed for final year students to submit their project reports, research papers, and dissertations. Streamlines the submission process with version control, review workflows, and automated notifications.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'PDF Processing'],
+      title: 'Future Us Website',
+      description: 'A deployed modern responsive website with clean UI/UX. Designed and developed with smooth user experience using React.js and Tailwind CSS. Deployed on Vercel for scalability with modern UI components, animations, and mobile-friendly design.',
+      technologies: ['React.js', 'Tailwind CSS', 'Vercel', 'JavaScript'],
       gradient: 'from-green-500 to-teal-600',
-      highlights: ['Document management', 'Submission workflows', 'Review system']
+      highlights: ['Responsive design', 'Modern UI/UX', 'Deployed on Vercel'],
+      githubUrl: 'https://github.com/Sukruthcr',
+      liveUrl: '#'
     }
   ];
 
@@ -45,6 +48,17 @@ const Projects = () => {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                   <h3 className="text-2xl md:text-3xl font-bold text-white">{project.title}</h3>
                   <div className="flex gap-3">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                      >
+                        <Github size={16} />
+                        GitHub
+                      </a>
+                    )}
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
