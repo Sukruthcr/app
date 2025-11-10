@@ -26,7 +26,7 @@ const Projects = () => {
       gradient: 'from-green-500 to-teal-600',
       highlights: ['Responsive design', 'Modern UI/UX', 'Deployed on Vercel'],
       githubUrl: 'https://github.com/Sukruthcr',
-      liveUrl: '#'
+      liveUrl: 'https://futureus-whyr.vercel.app'
     }
   ];
 
