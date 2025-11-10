@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, MapPin, Download } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -49,6 +49,17 @@ const Contact = () => {
         <p className="text-gray-400 text-center mb-12 text-lg">Let's connect and discuss opportunities</p>
         
         <div className="max-w-4xl mx-auto">
+          {/* Resume Download Button */}
+          <div className="mb-8 text-center">
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
+            >
+              <Download size={24} />
+              Download Resume
+            </a>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {contactInfo.map((item, index) => {
               const Icon = item.icon;

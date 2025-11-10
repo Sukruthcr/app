@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-[#0f1419] via-[#1a1f2e] to-[#0f1419] pt-20">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMTk2ZjMiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMy4zMTQgMi42ODYtNiA2LTZzNi0yLjY4NiA2LTZWMEg0MHY0YzAgMy4zMTQtMi42ODYgNi02IDZIM1Y0SDBoNHYyNGgxNnYySDBoMTh2Mkg0djJoMTh2MkgyMHYyaDI0djJIMjB2MmgyNHYySDE2djJoMjh2MTBoLTR2LTJoLTJ2NGgydjRoMnYtMmgydjJoNHYyaDJ2LTZoNFYzNmg0djJoMnYtMmgydjJoMnYtMmg0di0yaDJ2LTJoLTJ2LTJoMnYtMmgtMnYtMmgydi0yaC00di0yaC0ydi0yaC0ydi0yaC0ydi0yaC0ydi0yaC0ydi0yaDJ2LTJoNHYtNmgtNHYtMmg0di0yaC00djJoLTJ2LTZoMnYtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2MnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMTk2ZjMiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMy4zMTQgMi42ODYtNiA2LTZzNi0yLjY4NiA2LTZWMEg0MHY0YzAgMy4zMTQtMi42ODYgNi02IDZIM1Y0SDBoNHYyNGgxNnYySDBoMTh2MkgyMHYyaDI0djJIMjB2MmgyNHYySDE2djJoMjh2MTBoLTR2LTJoLTJ2NGgydjRoMnYtMmgydjJoNHYyaDJ2LTZoNFYzNmg0djJoMnYtMmgydjJoMnYtMmg0di0yaDJ2LTJoLTJ2LTJoMnYtMmgtMnYtMmgydi0yaC00di0yaC0ydi0yaC0ydi0yaC0ydi0yaC0ydi0yaC0ydi0yaDJ2LTJoNHYtNmgtNHYtMmg0di0yaC00djJoLTJ2LTZoMnYtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2Mmgtc3YtMmgtMnYyaC0ydi02aDJ2LTJoLTJ2MnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center">
@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-3">
-            AI & Robotics Engineer | Full Stack Developer
+            AI & Robotics Engineer | Full Stack & AI Developer
           </p>
           
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">

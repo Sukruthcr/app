@@ -17,6 +17,9 @@ const About = () => {
             <p className="text-gray-300 text-lg leading-relaxed">
               My journey in technology has been driven by curiosity and a desire to solve complex problems. From building intelligent parking systems to creating AI-powered chatbots, I'm constantly exploring new ways to leverage AI and software development to make a positive impact.
             </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I'm also exploring generative AI and robotics automation to create intelligent, adaptive systems.
+            </p>
           </div>
           
           <div className="space-y-6">
