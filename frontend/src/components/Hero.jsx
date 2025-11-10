@@ -9,8 +9,12 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center">
           <div className="mb-6 inline-block">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-5xl font-bold text-white mx-auto">
-              SC
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-cyan-400 mx-auto shadow-xl">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_personal-showcase-72/artifacts/7kcflefa_IMG_20251025_104215_330.jpg" 
+                alt="Sukruth CR" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
