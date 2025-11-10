@@ -52,9 +52,10 @@ const Contact = () => {
           {/* Resume Download Button */}
           <div className="mb-8 text-center">
             <a
-              href="https://customer-assets.emergentagent.com/job_personal-showcase-72/artifacts/ubs0rczw_Resume%20%28p%29.pdf"
+              href="https://customer-assets.emergentagent.com/job_personal-showcase-72/artifacts/nr4tjkpc_Resume%20%28p%29.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              download
               className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
             >
               <Download size={24} />
