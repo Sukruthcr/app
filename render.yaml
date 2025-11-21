@@ -1,18 +1,17 @@
 services:
   - type: web
     name: portfolio-backend
-    env: python
+    runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn server:app --host 0.0.0.0 --port 8000
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
     autoDeploy: true
 
-  - type: web
+  - type: static_site
     name: portfolio-frontend
-    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishPath: build
+    publishDir: build
     autoDeploy: true
 
 # After the backend is live, set REACT_APP_BACKEND_URL in the static site
