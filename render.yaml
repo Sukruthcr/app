@@ -9,6 +9,7 @@ services:
 
   - type: static
     name: portfolio-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     publishPath: build
