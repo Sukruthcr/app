@@ -12,7 +12,7 @@ services:
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    publishPath: build
+    publishDir: build
     autoDeploy: true
 
 # After the backend is live, set REACT_APP_BACKEND_URL in the static site
