@@ -11,7 +11,7 @@ services:
     name: portfolio-frontend
     runtime: static
     rootDir: frontend
-    buildCommand: npm install && npm run build
+    buildCommand: yarn install && yarn build
     publishPath: build
     autoDeploy: true
 
