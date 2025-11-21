@@ -49,7 +49,7 @@ const Contact = () => {
         <p className="text-gray-400 text-center mb-12 text-lg">Let's connect and discuss opportunities</p>
         
         <div className="max-w-4xl mx-auto">
-          {/* Resume Download Button */}
+          {/* Resume Download Button (external URL as requested) */}
           <div className="mb-8 text-center">
             <a
               href="https://customer-assets.emergentagent.com/job_personal-showcase-72/artifacts/nr4tjkpc_Resume%20%28p%29.pdf"
